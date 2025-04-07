@@ -1,0 +1,27 @@
+spring:
+  application:
+    name: gestion-scolarite
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/scolarite?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+
+server:
+  port: 8082
+
+
+springdoc:
+    api-docs:
+      path: /api-docs
