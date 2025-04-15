@@ -26,7 +26,7 @@ public class ClasseController {
         return classeHelper.findAllClasses();
     }
     @PostMapping
-    public  @ResponseBody ClasseResponse saveClasse (@Valid @RequestBody ClasseRequest classeRequest){
+    public  @ResponseBody ClasseResponse saveClasse (@RequestBody ClasseRequest classeRequest){
         return classeHelper.saveClasse(classeRequest);
     }
 }

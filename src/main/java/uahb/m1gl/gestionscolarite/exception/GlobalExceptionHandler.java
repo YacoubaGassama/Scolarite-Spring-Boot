@@ -12,9 +12,9 @@ import uahb.m1gl.gestionscolarite.dto.ErrorDTO;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestControllerAdvice
+//@RestControllerAdvice
 public class GlobalExceptionHandler {
-    //erreur 500 =internal_server_error
+
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     @ResponseBody
     @ExceptionHandler(value = {Exception.class})
