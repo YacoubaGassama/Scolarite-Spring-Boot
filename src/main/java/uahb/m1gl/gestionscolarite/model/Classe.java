@@ -19,6 +19,7 @@ public class Classe {
     private int montantInscription;
     private int mensualite;
     private int autreFrais;
+
     @ManyToOne
     @JoinColumn(name = "filiere_id")
     private Filiere filiere;

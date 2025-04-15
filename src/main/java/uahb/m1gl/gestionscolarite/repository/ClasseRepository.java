@@ -7,4 +7,5 @@ import uahb.m1gl.gestionscolarite.model.Classe;
 public interface ClasseRepository extends JpaRepository<Classe, Long> {
     Classe findByCode(String code);
     Classe findByNom(String nom);
+    Classe findByFiliereId(long id);
 }

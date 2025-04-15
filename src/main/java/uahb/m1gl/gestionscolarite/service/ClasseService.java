@@ -25,4 +25,8 @@ public class ClasseService {
         return classeRepository.findAll();
     }
 
+    public Classe findByCode(String code){return  classeRepository.findByCode(code);}
+    public Classe findByNom(String nom){return classeRepository.findByNom(nom);}
+    public Classe findByFiliereId(long id){ return classeRepository.findByFiliereId(id);}
+
 }

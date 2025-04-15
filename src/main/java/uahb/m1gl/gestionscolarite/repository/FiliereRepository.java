@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 import uahb.m1gl.gestionscolarite.model.Filiere;
 @Repository
 public interface FiliereRepository extends JpaRepository<Filiere, Long> {
+    Filiere findById(long id) ;
 }
